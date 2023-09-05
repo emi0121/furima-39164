@@ -29,6 +29,19 @@
 | street             | string              | null: false                    |
 | phone              | integer             | null: false                    |
 
+-has_many :addresses, through: :orders
+
+
+##Orders table
+
+| Column             | Type                | Options                        |
+|--------------------|---------------------|--------------------------------|
+| user_id           | integer              | null: false,foreign_key: true  |
+| item_id           | integer              | null: false,foreign_key: true  |
+
+-has_many :orders
+-belongs_to :user
+
 
 ##Items table
 
