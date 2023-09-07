@@ -21,7 +21,7 @@
 
 | Column             | Type                | Options                        |
 |--------------------|---------------------|--------------------------------|
-| orders             | references          | null: false,foreign_key: true  |
+| order_id           | references          | null: false,foreign_key: true  |
 | zip_code           | string              | null: false                    |
 | prefecture_id      | integer             | null: false                    |
 | city               | string              | null: false                    |
